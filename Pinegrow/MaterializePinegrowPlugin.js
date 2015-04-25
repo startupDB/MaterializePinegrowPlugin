@@ -327,7 +327,7 @@ $(function() {
         collapseButton.selector = '.button-collapse';
         collapseButton.parent_selector = '.nav-wrapper';
         collapseButton.preview_image = 'collapseButton.png';
-        collapseButton.code = '<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>';
+        collapseButton.code = '<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>';
         collapseButton.on_inserted = function() {
           alert('Add $(".button-collapse").sideNav(); to your $(document).ready');
         }
