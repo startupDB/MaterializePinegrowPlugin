@@ -2210,12 +2210,42 @@ $(function() {
         };
         f.addComponentType(anything);
 
+   var flexrow = new PgComponentType('materialize.flexrow', 'Flexrow');
+        flexrow.selector = '.flexrow';
+        flexrow.preview_image = 'tabs.png';
+        flexrow.code = '<div class="flexrow">\
+        </div>';
+        flexrow.tags = 'major';
+        flexrow.sections = {
+            'materialize.flexrow' : {
+                name : 'Flexrow Options',
+                fields : {
+                    'materialize.flexrow.FlexCenter' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexcenter',
+                        name: 'Center'
+                    },
+
+                    'materialize.flexrow.FlexMiddle' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexmiddle',
+                        name: 'Middle'
+                    }
+
+                }}
+            };
+
+        f.addComponentType(flexrow);
+
+
         //Tell Pinegrow about the framework
         pinegrow.addFramework(f);
 
         var libsection = new PgFrameworkLibSection("MaterializePinegrowPlugin_lib", "Components");
         //Pass components in array
-        libsection.setComponentTypes([icons, navbar, navbarLogo, navMobile, searchBar, sideNav, collapseList, collapseButton, collection, collectionItem, linkCollectionItem, avatarCollectionItem, collectionHeader, collectionItemWithSecondary, badge, dropdown, button, fixedActionButton, divider, table, videoContainer, videoResponsive, blockquote, section, verAlign, container, row, col, card, cardImageContainer, cardImage, cardContent, cardAction, cardReveal, cardPanel, form, inputField, selectField, switchInput, fileField, rangeField, datePicker, progressBar, preloadCircular, spinnerLayer, pagination, collapsible, slider, modal, parallax, tabs, footer]);
+        libsection.setComponentTypes([icons, navbar, navbarLogo, navMobile, searchBar, sideNav, collapseList, collapseButton, collection, collectionItem, linkCollectionItem, avatarCollectionItem, collectionHeader, collectionItemWithSecondary, badge, dropdown, button, fixedActionButton, divider, table, videoContainer, videoResponsive, blockquote, section, verAlign, container, row, col, card, cardImageContainer, cardImage, cardContent, cardAction, cardReveal, cardPanel, form, inputField, selectField, switchInput, fileField, rangeField, datePicker, progressBar, preloadCircular, spinnerLayer, pagination, collapsible, slider, modal, parallax, tabs, footer, flexrow]);
 
         f.addLibSection(libsection);
    });
