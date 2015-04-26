@@ -5427,19 +5427,7 @@ small {
     top: 100%;
     height: 100%;
     z-index: 1;
-    display: none;
-  will-change: translateY();}
-card .card-reveal-dw {
-    position: absolute;
-    background-color: #FFF;
-    width: 100%;
-    overflow-y: auto;
-    top: 100%;
-    height: 100%;
-    z-index: 1;
-    display: none;
-    padding: 20px;
-    will-change: translateY();}
+    display: none; }
     .card .card-reveal .card-title {
       cursor: pointer;
       display: block; }
