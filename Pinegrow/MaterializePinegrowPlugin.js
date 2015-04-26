@@ -1109,6 +1109,7 @@ $(function() {
                         ]
                     }
 
+
                 }
             }
         };
@@ -2176,6 +2177,18 @@ $(function() {
                         {key: 'z-depth-5', name: "Z Depth 5"}
                     ]
                 },
+                    'materialize.anything.flexrow' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexrow',
+                        name: 'Display Flex Horizontal '
+                    },
+                 'materialize.anything.flexcolumn' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexcolumn',
+                        name: 'Display Flex Vertical'
+                    },
                 'materialize.anything.truncate' : {
                     type : 'checkbox',
                     action: 'apply_class',
@@ -2190,6 +2203,101 @@ $(function() {
                 }
              }
           },
+
+            'materialize.anything_flexdisplay' : {
+            name: "FlexBox Options",
+            fields: {
+                'materialize.anything_flexdisplay.hvcenter' : {
+                    type : 'checkbox',
+                    action: 'apply_class',
+                    value: 'flexcenter',
+                    name: 'Row Horizontal Center<br>Col Vertical Center'
+                },
+                'materialize.anything_flexdisplay.vhcenter' : {
+                    type : 'checkbox',
+                    action: 'apply_class',
+                    value: 'flexmiddle',
+                    name: 'Row vertical Center<br>Col Horizontal Center'
+                },
+
+                     'materialize.anything_flexdisplay.flextopleft' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flextop',
+                        name: 'Row Top<br>Col Left'
+                    },
+                    'materialize.anything_flexdisplay.flexbotright' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexbottom',
+                        name: 'Row Bottom<br>Col Right'
+                    },
+
+                'materialize.anything_flexdisplay.flexlefttop' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexstart',
+                        name: 'Row Left<br>Col Top'
+                    },
+
+                'materialize.anything_flexdisplay.flexrightbot' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexend',
+                        name: 'Row Right<br>Col Bottom'
+                    },
+
+                 'materialize.anything_flexdisplay.flexaround' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexaround',
+                        name: 'Row Space Around'
+                    },
+                'materialize.anything_flexdisplay.flexbetween' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexbetween',
+                        name: 'Row Space Between'
+                },
+                     'materialize.anything_flexdisplay.itemend' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'itemflexend',
+                        name: 'Flex Item End'
+                        },
+                 'materialize.anything_flexdisplay.itemtop' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'itemflextop',
+                        name: 'Flex Item Top'
+                        },
+                 'materialize.anything_flexdisplay.itemcenter' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'itemflexcenter',
+                        name: 'Flex Item Center'
+                        },
+                 'materialize.anything_flexdisplay.stretch' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'itemflexgrow',
+                        name: 'Flex Stretch'
+                        },
+                 'materialize.anything_flexdisplay.flexfirst' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexfirst',
+                        name: 'Flex Order First'
+                        },
+                 'materialize.anything_flexdisplay.flexlast' : {
+                        type : 'checkbox',
+                        action : 'apply_class',
+                        value: 'flexlast',
+                        name: 'Flex Order Last'
+                        }
+            }
+            },
+
           'materialize.anything_js' : {
             name: "Javascript Options",
             fields: {
@@ -2205,8 +2313,7 @@ $(function() {
                     value: 'materialboxed',
                     name: 'Material Boxed'
                 }
-            }
-          }
+          }}
         };
         f.addComponentType(anything);
 
@@ -2216,27 +2323,6 @@ $(function() {
         flexrow.code = '<div class="flexrow">\
         </div>';
         flexrow.tags = 'major';
-        flexrow.sections = {
-            'materialize.flexrow' : {
-                name : 'Flexrow Options',
-                fields : {
-                    'materialize.flexrow.FlexCenter' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexcenter',
-                        name: 'Center'
-                    },
-
-                    'materialize.flexrow.FlexMiddle' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexmiddle',
-                        name: 'Middle'
-                    }
-
-                }}
-            };
-
         f.addComponentType(flexrow);
 
 
