@@ -2211,7 +2211,7 @@ $(function() {
                         type : 'select',
                         action: 'apply_class',
                         show_empty: true,
-                        name: 'Row Horizontal/Col Vertical',
+                        name: 'Position HV',
                         options: [
                             {key: 'flexstart', name: "R Left/C Top"},
                             {key: 'flexcenter', name: "Row H-Center/Col V-Center"},
@@ -2222,7 +2222,7 @@ $(function() {
                         type : 'select',
                         action: 'apply_class',
                         show_empty: true,
-                        name: 'Row Vertical/Col Horizontal',
+                        name: 'Position VH',
                         options: [
                             {key: 'flextop', name: "Row Top/Col Left"},
                             {key: 'flexmiddle', name: "Row V-Center/Col H-Center"},
