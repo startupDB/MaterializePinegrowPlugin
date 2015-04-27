@@ -3,6 +3,11 @@
 
 The plugin is using [MaterializeCSS](http://materializecss.com/)
 
+This version is an **attempt** to intergrate Flexbox features in the master plugin developped bij Mohammed Aljuboori.
+The plugin js file and the matrialize css file are adapted. 
+
+**Please note that this work in progress and not usable for production**
+
 Usage
 =====
 [Download](https://github.com/MhdAljuboori/MaterializePinegrowPlugin/archive/master.zip) the plugin, then open Pinegrow
