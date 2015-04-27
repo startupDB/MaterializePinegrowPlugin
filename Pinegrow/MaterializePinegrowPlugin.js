@@ -2204,78 +2204,51 @@ $(function() {
              }
           },
 
-            'materialize.anything_flexdisplay' : {
+              'materialize.anything_flexdisplay' : {
             name: "FlexBox Options",
             fields: {
-                'materialize.anything_flexdisplay.hvcenter' : {
-                    type : 'checkbox',
-                    action: 'apply_class',
-                    value: 'flexcenter',
-                    name: 'Row Horizontal Center<br>Col Vertical Center'
+            'materialize.anything_flexhorizontal' : {
+                        type : 'select',
+                        action: 'apply_class',
+                        show_empty: true,
+                        name: 'Position R Horizonta/C Vertical',
+                        options: [
+                            {key: 'flexstart', name: "R Left/C Top"},
+                            {key: 'flexcenter', name: "RH Center/CH Center"},
+                            {key: 'flexend', name: "R Right/C Bottom"},
+                        ]
+                 },
+                 'materialize.anything_flexvertical' : {
+                        type : 'select',
+                        action: 'apply_class',
+                        show_empty: true,
+                        name: 'Position R Vertical/C Horizontal',
+                        options: [
+                            {key: 'flextop', name: "R Top/C Left"},
+                            {key: 'flexmiddle', name: "RV Center/CH Center"},
+                            {key: 'flexbottom', name: "R Bottom/C Right"},
+                        ]
+    },
+                 'materialize.anything_flexspace' : {
+                        type : 'select',
+                        action: 'apply_class',
+                        show_empty: true,
+                        name: 'Flex Space',
+                        options: [
+                            {key: 'flexaround', name: "Around"},
+                            {key: 'flexbetween', name: "Between"},
+                        ]
                 },
-                'materialize.anything_flexdisplay.vhcenter' : {
-                    type : 'checkbox',
-                    action: 'apply_class',
-                    value: 'flexmiddle',
-                    name: 'Row vertical Center<br>Col Horizontal Center'
-                },
-
-                     'materialize.anything_flexdisplay.flextopleft' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flextop',
-                        name: 'Row Top<br>Col Left'
-                    },
-                    'materialize.anything_flexdisplay.flexbotright' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexbottom',
-                        name: 'Row Bottom<br>Col Right'
-                    },
-
-                'materialize.anything_flexdisplay.flexlefttop' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexstart',
-                        name: 'Row Left<br>Col Top'
-                    },
-
-                'materialize.anything_flexdisplay.flexrightbot' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexend',
-                        name: 'Row Right<br>Col Bottom'
-                    },
-
-                 'materialize.anything_flexdisplay.flexaround' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexaround',
-                        name: 'Row Space Around'
-                    },
-                'materialize.anything_flexdisplay.flexbetween' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'flexbetween',
-                        name: 'Row Space Between'
-                },
-                     'materialize.anything_flexdisplay.itemend' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'itemflexend',
-                        name: 'Flex Item End'
-                        },
-                 'materialize.anything_flexdisplay.itemtop' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'itemflextop',
-                        name: 'Flex Item Top'
-                        },
-                 'materialize.anything_flexdisplay.itemcenter' : {
-                        type : 'checkbox',
-                        action : 'apply_class',
-                        value: 'itemflexcenter',
-                        name: 'Flex Item Center'
+                     'materialize.anything_flexitem' : {
+                        type : 'select',
+                        action: 'apply_class',
+                        show_empty: true,
+                        name: 'Flex Item',
+                        options: [
+                            {key: 'itemflextop', name: "Top"},
+                            {key: 'itemflexcenter', name: "Center"},
+                            {key: 'itemflexend', name: "Bottom"}
+                        ]
                         },
                  'materialize.anything_flexdisplay.stretch' : {
                         type : 'checkbox',
@@ -2294,11 +2267,9 @@ $(function() {
                         action : 'apply_class',
                         value: 'flexlast',
                         name: 'Flex Order Last'
-                        }
-            }
+                 }}
             },
-
-          'materialize.anything_js' : {
+           'materialize.anything_js' : {
             name: "Javascript Options",
             fields: {
                 'materialize.anything_js.tooltipped' : {
@@ -2312,8 +2283,9 @@ $(function() {
                     action: 'apply_class',
                     value: 'materialboxed',
                     name: 'Material Boxed'
-                }
-          }}
+                   }
+                  }
+                  }
         };
         f.addComponentType(anything);
 
