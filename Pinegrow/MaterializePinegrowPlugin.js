@@ -2211,22 +2211,22 @@ $(function() {
                         type : 'select',
                         action: 'apply_class',
                         show_empty: true,
-                        name: 'Position R Horizonta/C Vertical',
+                        name: 'Row Horizontal/Col Vertical',
                         options: [
                             {key: 'flexstart', name: "R Left/C Top"},
-                            {key: 'flexcenter', name: "RH Center/CH Center"},
-                            {key: 'flexend', name: "R Right/C Bottom"},
+                            {key: 'flexcenter', name: "Row H-Center/Col V-Center"},
+                            {key: 'flexend', name: "Row Right/Col Bottom"},
                         ]
                  },
                  'materialize.anything_flexvertical' : {
                         type : 'select',
                         action: 'apply_class',
                         show_empty: true,
-                        name: 'Position R Vertical/C Horizontal',
+                        name: 'Row Vertical/Col Horizontal',
                         options: [
-                            {key: 'flextop', name: "R Top/C Left"},
-                            {key: 'flexmiddle', name: "RV Center/CH Center"},
-                            {key: 'flexbottom', name: "R Bottom/C Right"},
+                            {key: 'flextop', name: "Row Top/Col Left"},
+                            {key: 'flexmiddle', name: "Row V-Center/Col H-Center"},
+                            {key: 'flexbottom', name: "Row Bottom/Col Right"},
                         ]
     },
                  'materialize.anything_flexspace' : {
